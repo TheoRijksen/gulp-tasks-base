@@ -460,8 +460,6 @@ template {
 
 body {
     background: #0076A3;
-    background: -webkit-gradient(linear, left top, right top, from(red) , to(yellow));
-    background: linear-gradient(to right, red , yellow);
 }
 
 img {
@@ -479,16 +477,12 @@ a {
     padding: 12px 19.2px;
     padding: .75rem 1.2rem;
     display: inline-block;
+}
 
-    &--large {
+.btn--large {
         padding: 17.6px 30.4px;
         padding: 1.1rem 1.9rem;
-
-        @mixin atSmall {
-            font-size: 1.25rem;
-        }
     }
-}
 
 /* Do not edit modules/_sprite directly as it is generated automatically by Gulp */
 

@@ -1,10 +1,6 @@
 var gulp = require('gulp'),
     postcss = require('gulp-postcss'),
-    autoprefixer = require('autoprefixer'),
-    cssvars = require('postcss-simple-vars'),
     nested = require('postcss-nested'),
-    cssImport = require('postcss-import'),
-    mixins = require('postcss-mixins'),
     hexrgba = require('postcss-hexrgba'),
     sourcemaps = require('gulp-sourcemaps'),
     cssnext = require('postcss-cssnext');
@@ -14,7 +10,9 @@ gulp.task('styles', function(){
         .pipe(sourcemaps.init())
         .pipe(postcss([
           require('postcss-partial-import')({prefix: '_', extension: '.css'}),
-          cssnext()
+          hexrgba(),
+          cssnext(),
+          nested()
         ]))
         .on('error', function(errorInfo) {
             console.log(errorInfo.toString());

@@ -4,7 +4,6 @@
 
 body {
     background: var(--color-background);
-    background: linear-gradient(to right, red , yellow);
 }
 
 img {
