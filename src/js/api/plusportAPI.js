@@ -11,12 +11,13 @@ class PlusPortAPI {
 		//console.log(product_price_data.pakket_id);
 	}
 
-	init() { 
+	init() {
 		//this.fetchData('product', product_price_data.pakket_id);
 		//console.log( this.priceElements);
 
+		console.log(this.priceElements);
 
-		this.priceElements.forEach(element => {
+		this.priceElements.forEach((element) => {
 			//console.log();
 
 			this.fetchData('product', element.dataset.productid, element);
@@ -26,7 +27,7 @@ class PlusPortAPI {
 	fetchData(dataType, productID, element) {
 		switch (dataType) {
 			case 'product':
-				this.url = `webshop/forms/${this.formID}/products/${productID}`;
+				this.url = `webshop/forms/${this.formID}/products/23`;
 				break;
 			default:
 				this.url = `webshop/forms/${this.formID}/products/`;
@@ -44,7 +45,7 @@ class PlusPortAPI {
 				if (data.status == 'success') {
 					element.innerHTML = `€ ${data.data.price}`;
 					console.log('Success:', data.status);
-				} else { 
+				} else {
 					console.log('Error:', data.status);
 				}
 			})

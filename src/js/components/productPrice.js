@@ -2,13 +2,11 @@ class ProductPrice {
 	constructor(api) {
 		this.showLoader();
 		// this.init();
-
-		
 	}
 
-	// async init() { 
+	// async init() {
 	// 	const fullName = await api.fetchData('product', 184);
-    // 	console.log(fullName);
+	// 	console.log(fullName);
 	// }
 
 	hasPriceShortCode() {}

@@ -15,5 +15,18 @@
   "bugs": {
     "url": "https://github.com/TheoRijksen/gulp-tasks-base/issues"
   },
-  "homepage": "https://github.com/TheoRijksen/gulp-tasks-base#readme"
+  "homepage": "https://github.com/TheoRijksen/gulp-tasks-base#readme",
+  "devDependencies": {
+    "@babel/core": "^7.17.7",
+    "@babel/preset-env": "^7.16.11",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babelify": "^10.0.0",
+    "browserify": "^17.0.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  }
 }
